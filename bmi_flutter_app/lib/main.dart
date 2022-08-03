@@ -1,3 +1,4 @@
+import 'package:bmi_flutter_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,77 +12,79 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: 200.0,
-                    height: 40.0,
-                    child: Text(''),
-                    decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        // topRight: Radius.circular(30),
-                        bottomLeft: Radius.circular(30),
-                        // bottomRight: Radius.circular(30),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 40.0,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: 200.0,
-                    height: 40.0,
-                    child: Text(''),
-                    decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        // topRight: Radius.circular(30),
-                        bottomLeft: Radius.circular(30),
-                        // bottomRight: Radius.circular(30),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 40.0,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: 200.0,
-                    height: 40.0,
-                    child: Text(''),
-                    decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        // topRight: Radius.circular(30),
-                        bottomLeft: Radius.circular(30),
-                        // bottomRight: Radius.circular(30),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
+      theme: ThemeData(fontFamily: 'dana'),
+      home: HomeScreen(),
+      // Scaffold(
+      //   body: SafeArea(
+      //     child: Column(
+      //       children: [
+      //         Row(
+      //           mainAxisAlignment: MainAxisAlignment.end,
+      //           children: [
+      //             Container(
+      //               width: 200.0,
+      //               height: 40.0,
+      //               child: Text(''),
+      //               decoration: BoxDecoration(
+      //                 color: Colors.amber,
+      //                 borderRadius: BorderRadius.only(
+      //                   topLeft: Radius.circular(30),
+      //                   // topRight: Radius.circular(30),
+      //                   bottomLeft: Radius.circular(30),
+      //                   // bottomRight: Radius.circular(30),
+      //                 ),
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //         SizedBox(
+      //           height: 40.0,
+      //         ),
+      //         Row(
+      //           mainAxisAlignment: MainAxisAlignment.end,
+      //           children: [
+      //             Container(
+      //               width: 200.0,
+      //               height: 40.0,
+      //               child: Text(''),
+      //               decoration: BoxDecoration(
+      //                 color: Colors.amber,
+      //                 borderRadius: BorderRadius.only(
+      //                   topLeft: Radius.circular(30),
+      //                   // topRight: Radius.circular(30),
+      //                   bottomLeft: Radius.circular(30),
+      //                   // bottomRight: Radius.circular(30),
+      //                 ),
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //         SizedBox(
+      //           height: 40.0,
+      //         ),
+      //         Row(
+      //           mainAxisAlignment: MainAxisAlignment.end,
+      //           children: [
+      //             Container(
+      //               width: 200.0,
+      //               height: 40.0,
+      //               child: Text(''),
+      //               decoration: BoxDecoration(
+      //                 color: Colors.amber,
+      //                 borderRadius: BorderRadius.only(
+      //                   topLeft: Radius.circular(30),
+      //                   // topRight: Radius.circular(30),
+      //                   bottomLeft: Radius.circular(30),
+      //                   // bottomRight: Radius.circular(30),
+      //                 ),
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

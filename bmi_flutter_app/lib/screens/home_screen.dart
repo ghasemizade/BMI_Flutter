@@ -11,8 +11,22 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final weightController = TextEditingController();
   final heightController = TextEditingController();
+
+  double resultBMI = 0;
+  String resultText = '';
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        title: Text(
+          'تو چنده؟ BMI',
+          style: TextStyle(color: black),
+        ),
+      ),
+    );
   }
 }
