@@ -2,8 +2,9 @@ import 'package:bmi_flutter_app/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class RightShape extends StatelessWidget {
-  final double width;
-  const RightShape({Key? key, this.width = 0}) : super(key: key);
+  final double widht;
+
+  const RightShape({Key? key, this.widht = 0}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +12,8 @@ class RightShape extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Container(
-          height: 40.0,
-          width: width,
+          height: 40,
+          width: widht,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(20),

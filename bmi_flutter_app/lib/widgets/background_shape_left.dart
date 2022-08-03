@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class LeftShape extends StatelessWidget {
   final double width;
+
   const LeftShape({Key? key, this.width = 0}) : super(key: key);
 
   @override
@@ -10,12 +11,13 @@ class LeftShape extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          height: 40.0,
+          height: 40,
           width: width,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
-              topRight: Radius.circular(20.0),
+              topRight: Radius.circular(20),
             ),
+            color: Colors.green,
           ),
         ),
       ],
