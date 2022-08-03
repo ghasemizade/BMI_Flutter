@@ -21,15 +21,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.green[100],
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.orange[800],
         elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(65),
+          ),
+        ),
         centerTitle: true,
         title: Text(
           'تو چنده ؟ BMI',
           style: TextStyle(
-            color: black,
-          ),
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0),
         ),
       ),
       body: SafeArea(
@@ -115,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                  color: orangeBackground),
+                  color: resultBMI >= 25 ? Colors.red : Colors.green),
             ),
             SizedBox(
               height: 80,
