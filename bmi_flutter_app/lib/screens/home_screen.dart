@@ -27,6 +27,61 @@ class _HomeScreenState extends State<HomeScreen> {
           style: TextStyle(color: black),
         ),
       ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  width: 130.0,
+                  child: TextField(
+                    controller: weightController,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: orangeBackground),
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'وزن',
+                      hintStyle: TextStyle(
+                        color: orangeBackground.withOpacity(0.5),
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 130.0,
+                  child: TextField(
+                    controller: weightController,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: orangeBackground),
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'قد',
+                      hintStyle: TextStyle(
+                        color: orangeBackground.withOpacity(0.5),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            InkWell(
+              onTap: () {},
+            )
+          ],
+        ),
+      ),
     );
   }
 }
