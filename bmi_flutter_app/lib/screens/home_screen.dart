@@ -77,8 +77,26 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 40.0,
             ),
             InkWell(
-              onTap: () {},
-            )
+              onTap: () {
+                final weight = double.parse(weightController.text);
+                final height = double.parse(weightController.text);
+
+                setState(() {
+                  resultBMI = weight / (height * height);
+                  if (resultBMI > 25) {
+                    resultText = 'شما اضافه وزن دارید';
+                  } else if (resultBMI >= 18.5 && resultBMI <= 25) {
+                    resultText = 'وزن شما نرمال است';
+                  } else {
+                    resultText = 'وزن شما کمتر از حد نرمال است';
+                  }
+                });
+              },
+              child: Text(
+                '!محاسبه کن',
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),
