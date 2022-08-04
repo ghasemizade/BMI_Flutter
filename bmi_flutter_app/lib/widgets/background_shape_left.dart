@@ -20,6 +20,9 @@ class LeftShape extends StatelessWidget {
             color: Colors.green,
           ),
         ),
+        Text(
+          "سالم بودن",
+        ),
       ],
     );
   }

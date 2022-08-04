@@ -11,6 +11,7 @@ class RightShape extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
+        Text('ناسالم بودن'),
         Container(
           height: 40,
           width: widht,
